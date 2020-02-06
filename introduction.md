@@ -12,17 +12,17 @@ Now, let's start to show how to run your R program in unity cluster. It would be
 
 Open terminal and input
 
-ssh -l deng.295 unity.asc.ohio-state.edu (here you should use your own lastname.#)
+`ssh -l deng.295 unity.asc.ohio-state.edu` (here you should use your own lastname.#)
 
 then you will be asked to input your password. By the way, your password is invisible.
 
 When you see "Welcome to Unity", you have successfully logged in. Next, let's run R in unity cluster.
 
-module load intel
+`module load intel
 
 module load R/3.5.1-test
 
-R
+R`
 
 You can see familiar environment as in your own laptop. However, actually we don't run R program here. The reason why we do this is that you can install required R packages by your program here. Otherwise, you will fail to run your program, because only basic R packages are installed in unity cluster and you have to install many extra packages.
 
@@ -46,7 +46,7 @@ vi test.pbs 
 
 and below is an example of pbs file:
 
-#PBS -l walltime=08:00:00
+`#PBS -l walltime=08:00:00
 
 #PBS -l nodes=1:ppn=16,mem=64GB
 
@@ -63,7 +63,8 @@ module load intel
 
 module load R/3.5.1-test
 
-Rscript test.R
+Rscript test.R`
+
 
 #PBS -l walltime=08:00:00, this defines the maximum running time you can use in cluster
 

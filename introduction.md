@@ -12,7 +12,7 @@ Now, let's start to show how to run your R program in unity cluster. It would be
 
 Open terminal and input
 
- ssh -l deng.295 unity.asc.ohio-state.edu (here you should use your own lastname.#)
+ssh -l deng.295 unity.asc.ohio-state.edu (here you should use your own lastname.#)
 
 then you will be asked to input your password. By the way, your password is invisible.
 

@@ -18,11 +18,11 @@ then you will be asked to input your password. By the way, your password is invi
 
 When you see "Welcome to Unity", you have successfully logged in. Next, let's run R in unity cluster.
 
-`module load intel
+```module load intel
 
 module load R/3.5.1-test
 
-R`
+R```
 
 You can see familiar environment as in your own laptop. However, actually we don't run R program here. The reason why we do this is that you can install required R packages by your program here. Otherwise, you will fail to run your program, because only basic R packages are installed in unity cluster and you have to install many extra packages.
 

@@ -47,27 +47,41 @@ vi test.pbs 
 and below is an example of pbs file:
 
 #PBS -l walltime=08:00:00
+
 #PBS -l nodes=1:ppn=16,mem=64GB
+
 #PBS -N Example_job
+
 #PBS -j oe
+
 #PBS -m abe
+
 #PBS -M supercomputer@gmail.com
 
+
 module load intel
+
 module load R/3.5.1-test
 
 Rscript test.R
 
 #PBS -l walltime=08:00:00, this defines the maximum running time you can use in cluster
+
 #PBS -l nodes=1:ppn=16,mem=64GB, we will use 16 processors and each processor has 4GB memory.
+
 #PBS -N Example_job, the name of your job
+
 #PBS -j oe
+
 #PBS -m abe
+
 #PBS -M supercomputer@gmail.com, unity cluster will send message upon start and end of your job
+
 
 After defining these parameters, we start to write commands to run our program.
 
 module load intel, this is necessary to load R
+
 module load R/3.5.1-test, load R
 
 Rscript test.R, run R script

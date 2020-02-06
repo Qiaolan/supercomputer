@@ -136,7 +136,7 @@ The power of unity cluster is shown by parallel computing. For example, a large-
 To initiate parallel computing, we need to add some commands to our pbs file. Here is an example:
 
 
-
+```bash
 #PBS -l walltime=24:00:00
 
 #PBS -l nodes=1:ppn=16,mem=224GB
@@ -159,7 +159,7 @@ module load cxx17
 
 #There are multiple versions of R and do check whether the version of R is compatible with the code you are going to execute.
 
-```bash
+
 for i in `seq 1 16`
 
 do

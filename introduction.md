@@ -69,7 +69,7 @@ Rscript test.R
 
 #PBS -l walltime=08:00:00, this defines the maximum running time you can use in cluster
 
-#PBS -l nodes=1:ppn=16,mem=64GB, we will use 16 processors and each processor has 4GB memory.
+#PBS -l nodes=1:ppn=16,mem=64GB, we will use 1 node (think it as one computer) with 16 processors (usually your own Mac or PC has only 4 to 8 cores) and each processor has 4GB memory.
 
 #PBS -N Example_job, the name of your job
 

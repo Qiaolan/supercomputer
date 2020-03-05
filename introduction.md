@@ -1,6 +1,6 @@
 I am going write a short guide of ASC unity cluster and I hope this would be helpful to new users.
 
-### Basic application
+# Basic application
 
 First of all, what is ASC unity cluster?
 
@@ -130,7 +130,7 @@ Now, you should know how to run your R script file in unity cluster.
 
 
 
-### Parallel Computing
+# Parallel Computing
 
 The power of unity cluster is shown by parallel computing. For example, a large-scale simulation in R may take you several days to complete, while by parallel computing, this can be done in hours.
 

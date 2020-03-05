@@ -161,13 +161,13 @@ module load cxx17
 #There are multiple versions of R and do check whether the version of R is compatible with the code you are going to execute.
 
 
-for i in `seq 1 16`
+for i in `seq 1 16`   # here we have 16 parallel jobs
 
 do
 
-(./z_sim_code.R $i) &
+(Rscript ./z_sim_code.R $i) &.   # the brackets contain your commands. "&" means run simultaneously instead of one after another. THIS IS VERY IMPORTANT
 
 done
 
-wait
+wait   # wait and don't end until 16 parallel jobs are done
 ```
